@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    
+}
+:root{
+    --bg-color: antiquewhite;
+    --main-color: red;
+    --text-color: #010101;
+    --2nd-color: #434343;
+    --other-color: black;
+    --big-font: 1.3rem;
+    --h2-font: 2.3rem;
+    --p-font: 1rem;
+
+
+}
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: transparent;
+    padding: 11px 11%;
+    margin-left: 80px;
+    transition: all .45s ease;
+ }
+ .logo img {
+      
+     width: 100%;
+     height: auto; 
+     margin-right: 400px;  
+ }
+ .navigation {
+
+    display: flex;
+
+}
+.navigation a{
+
+    font-size: var(--p-font);
+    color: var(--other-color);
+    text-decoration: none;
+    font-weight: 500;
+   padding: 10px 30px;
+   margin: 0 20px;
+   background: aqua;
+   border-radius: 25px;
+   transition: all .45s ease;  
+   margin-left: 75px;
+}
+.navigation a:hover {
+
+    background: white;
+}
+.icons{
+    display: flex;
+    align-items: center;
+  
+  }
+  .icons i{
+      height: 50px;
+      width: 50px;
+      background: aqua;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: var(--other-color);
+      font-size: 22px;
+      margin-right: 25px;
+      margin-left: 10px;
+      transition: all .45s ease;
+  }
+  .icons i:hover{
+      transform: translateY(-4px);
+      color: red;
+  }
+  #menu-icon{
+    color: var(--other-color);
+    font-size: 33px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(back15.jpeg);
+    background-size: cover;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+
+    font-size: 50px;
+    font-weight: 500;
+    color: black;
+    text-decoration: underline;
+
+
+}
+.contact .content p{
+
+    font-weight: 300;
+    color: black;
+    font-size: 25px;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+        
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box{
+
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 30px;  
+    margin-left: 400px;
+}
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: black;
+    flex-direction: column;
+    font-weight: 500;
+}
+.container .contactInfo .box .text h3{
+    font-weight: 700;
+    color: brown;
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: coral;
+}
+.contactForm h2{
+    font-size: 30px;
+    color: blue;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+
+}
+
+.contactForm .inputBox span{
+
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: blue;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+
+    color: blue;
+    font-size: 18px;
+    transform: translateY(-20px);
+
+}
+.contactForm .inputBox input[type="submit"]{
+
+    width: 100px;
+    background: blue;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
